@@ -10,12 +10,14 @@ def hamming(s1, s2):
         print("Both strings have different lengths!")
         return
     dist = 0
-    for i in range(len(s1)):
+    for i in range(len(s2)):
         if(s1[i] != s2[i]):
             dist += 1
 
     return dist
 
 
+
 print("hamming('ACGTACT', 'ACGATCT'): " + str(hamming('ACGTACT', 'ACGATCT')))
 print("hamming('GACT', 'GACT'): " + str(hamming('GACT', 'GACT')))
+print("hamming('GACT', 'GACTT'): " + str(hamming('GACT', 'GACTT')))
