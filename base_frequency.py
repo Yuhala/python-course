@@ -13,6 +13,16 @@ def dna_stats(dnaS):
         dic[c] += 1
     return dic
 
+def dna_stats2(dnaS):
+    dic = {}
+    s = dnaS.upper()
+    for c in s:
+        if c in dic:
+            dic[c] += 1
+        else:
+            dic[c] = 1
+    return dic
 
 print("dna_stats('ACGTACGAATC'): ", dna_stats('ACGTACGAATC'))
+print("dna_stats2('ACGTACGAATC'): ", dna_stats2('ACGTACGAATC'))
 print("dna_stats('attac'): ", dna_stats('attac'))
